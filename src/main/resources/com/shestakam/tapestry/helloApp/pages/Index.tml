@@ -1,0 +1,14 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+    <body>
+     <h1>Enter name and password</h1>
+         <t:form t:id="createUserForm">
+
+             <t:textfield value="user.name"/>
+             <br/>
+             <t:textfield  value="user.password"/>
+             <br/>
+             <t:submit value="Create user"/>
+
+         </t:form>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+    <body>
+        <h1>Hello</h1>
+        <h1>Username :  ${user.name} </h1>
+        <h1>Password :  ${user.password} </h1>
+
+        <a t:type="pagelink" page="adress" context="user.name">Get adress</a>
+        <br/>
+        <a t:type="pagelink" page="adressQuery" context="user.name">Get adress</a>
+
+
+<!--
+        <t:actionlink t:id="adressQuery" context="user.name">Get adreess</t:actionlink>&ndash;&gt;-->
+
+   <!--     <t:actionlink t:id="adress" context="user.name">Get adreess</t:actionlink>-->
+<!--
+        <t:actionlink t:id="adress" context="user.name">Get adreess</t:actionlink>-->
+
+    </body>
+</html>
+
+

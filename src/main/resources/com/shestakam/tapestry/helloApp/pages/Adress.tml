@@ -1,0 +1,10 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+    <body>
+
+        <h1>Name :  ${name} </h1>
+        <h1>Adress :  ${adress} </h1>
+
+    </body>
+</html>
+

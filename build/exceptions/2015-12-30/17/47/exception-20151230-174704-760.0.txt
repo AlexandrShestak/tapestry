@@ -1,0 +1,160 @@
+EXCEPTION STACK:
+
+
+  Exception: org.apache.tapestry5.runtime.ComponentEventException
+    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
+    context: org.apache.tapestry5.internal.EmptyEventContext@79b38657
+  eventType: activate
+
+  Exception: org.apache.tapestry5.ioc.internal.OperationException
+    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
+      trace: Handling page render request for page AdressQuery
+             Triggering event 'activate' on AdressQuery
+             Obtaining value for parameter #1 of com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String)
+
+  Exception: java.lang.RuntimeException
+    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
+
+  Exception: java.lang.RuntimeException
+    Message: The value for query parameter 'name' was blank, but a non-blank value is needed.
+
+  Stack trace:
+
+  - org.apache.tapestry5.internal.transform.OnEventWorker$9.valueForEventHandlerMethodParameter(OnEventWorker.java:450)
+  - org.apache.tapestry5.internal.transform.EventHandlerMethodParameterSource$ParameterExtractor.invoke(EventHandlerMethodParameterSource.java:43)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.transform.EventHandlerMethodParameterSource.get(EventHandlerMethodParameterSource.java:66)
+  - com.shestakam.tapestry.helloApp.pages.AdressQuery.advised$dispatchComponentEvent_199f3d0e4631(AdressQuery.java)
+  - com.shestakam.tapestry.helloApp.pages.AdressQuery$Invocation_dispatchComponentEvent_199f3d0e4630.proceedToAdvisedMethod(Unknown Source)
+  - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:90)
+  - org.apache.tapestry5.internal.services.ComponentInstantiatorSourceImpl$EventMethodAdvice.advise(ComponentInstantiatorSourceImpl.java:484)
+  - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
+  - org.apache.tapestry5.internal.services.ComponentInstantiatorSourceImpl$EventMethodAdvice.advise(ComponentInstantiatorSourceImpl.java:484)
+  - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
+  - org.apache.tapestry5.internal.services.ComponentInstantiatorSourceImpl$EventMethodAdvice.advise(ComponentInstantiatorSourceImpl.java:484)
+  - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
+  - org.apache.tapestry5.internal.services.ComponentInstantiatorSourceImpl$EventMethodAdvice.advise(ComponentInstantiatorSourceImpl.java:484)
+  - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
+  - com.shestakam.tapestry.helloApp.pages.AdressQuery.dispatchComponentEvent(AdressQuery.java)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.dispatchEvent(ComponentPageElementImpl.java:917)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.processEventTriggering(ComponentPageElementImpl.java:1102)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.access$3100(ComponentPageElementImpl.java:57)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1047)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1044)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementResourcesImpl.invoke(ComponentPageElementResourcesImpl.java:154)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.triggerContextEvent(ComponentPageElementImpl.java:1043)
+  - org.apache.tapestry5.internal.structure.InternalComponentResourcesImpl.triggerContextEvent(InternalComponentResourcesImpl.java:288)
+  - org.apache.tapestry5.internal.services.PageActivatorImpl.activatePage(PageActivatorImpl.java:51)
+  - $PageActivator_199f3d0e45b3.activatePage(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderRequestHandlerImpl.handle(PageRenderRequestHandlerImpl.java:60)
+  - org.apache.tapestry5.modules.TapestryModule$34.handle(TapestryModule.java:1974)
+  - $PageRenderRequestHandler_199f3d0e45b4.handle(Unknown Source)
+  - $PageRenderRequestHandler_199f3d0e45af.handle(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentRequestHandlerTerminator.handlePageRender(ComponentRequestHandlerTerminator.java:48)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handlePageRender(DeferredResponseRenderer.java:52)
+  - $ComponentRequestHandler_199f3d0e45b0.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handlePageRender(InitializeActivePageName.java:47)
+  - $ComponentRequestHandler_199f3d0e45b0.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.ProductionModeUnknownComponentFilter.handlePageRender(ProductionModeUnknownComponentFilter.java:62)
+  - $ComponentRequestHandler_199f3d0e45b0.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$2.run(RequestOperationTracker.java:73)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.run(OperationTrackerImpl.java:56)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.run(PerThreadOperationTracker.java:60)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.run(RegistryImpl.java:1254)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handlePageRender(RequestOperationTracker.java:66)
+  - $ComponentRequestHandler_199f3d0e45b0.handlePageRender(Unknown Source)
+  - $ComponentRequestHandler_199f3d0e4582.handlePageRender(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderDispatcher.dispatch(PageRenderDispatcher.java:55)
+  - $Dispatcher_199f3d0e4584.dispatch(Unknown Source)
+  - $Dispatcher_199f3d0e457a.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_199f3d0e457b.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:846)
+  - $RequestHandler_199f3d0e457b.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:836)
+  - $RequestHandler_199f3d0e457b.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_199f3d0e457b.service(Unknown Source)
+  - $RequestHandler_199f3d0e4571.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_199f3d0e4573.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_199f3d0e456e.service(Unknown Source)
+  - $HttpServletRequestHandler_199f3d0e4573.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:796)
+  - $HttpServletRequestHandler_199f3d0e4573.service(Unknown Source)
+  - $HttpServletRequestHandler_199f3d0e456d.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1148)
+  - org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:387)
+  - org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+  - org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+  - org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+  - org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:417)
+  - org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+  - org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+  - org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+  - org.mortbay.jetty.Server.handle(Server.java:324)
+  - org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:535)
+  - org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:865)
+  - org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:539)
+  - org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+  - org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+  - org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)
+  - org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:520)
+
+REQUEST:
+
+Basic Information:
+
+                contextPath: /1
+                      flags: requestedSessionIdValid
+                     method: GET
+                       path: /adressquery
+                     locale: en_US
+                 serverName: localhost
+                 remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+                     Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+            Accept-Encoding: gzip, deflate, sdch
+            Accept-Language: en-US,en;q=0.8
+                 Connection: keep-alive
+                     Cookie: JSESSIONID=15ozt61bmcoem
+                       Host: localhost:8080
+  Upgrade-Insecure-Requests: 1
+                 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+
+SESSION:
+
+   state:Adress::adress: q2h5gfoct7g1s383bipln8bah1
+     state:Adress::name: ewrqwe34234234242
+  state:HelloUser::user: com.shestakam.tapestry.helloApp.entities.User@3270a48d
+
+SYSTEM INFORMATION:
+
+Memory:
+      202,349,104 bytes free
+      268,435,456 bytes total
+    3,817,865,216 bytes max
+
+11 Threads:
+                                                            Reference Handler WAITING, daemon, priority 10
+                                                                    Finalizer WAITING, daemon, priority 8
+                                                            Signal Dispatcher RUNNABLE, daemon, priority 9
+                                                               process reaper TIMED_WAITING, daemon, priority 10
+                                                                         main WAITING
+                                                           Monitor Ctrl-Break RUNNABLE, daemon
+*                                                 1296928719@qtp-1009916891-0 RUNNABLE
+  1628289406@qtp-1009916891-1 - Acceptor0 SelectChannelConnector@0.0.0.0:8080 RUNNABLE
+                                                                      Timer-0 TIMED_WAITING, daemon
+                                                  1295301404@qtp-1009916891-3 TIMED_WAITING
+                                                  1736126075@qtp-1009916891-4 TIMED_WAITING
