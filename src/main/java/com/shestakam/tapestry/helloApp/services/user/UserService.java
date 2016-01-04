@@ -55,7 +55,8 @@ public class UserService implements IUserService {
 
 
         User user = getUser(username);
-        user.getAddress().add(address);
+        //user.getAddress().add(address);
+        user.addToAddress(address);
         objectContext.commitChanges();
     }
 }
