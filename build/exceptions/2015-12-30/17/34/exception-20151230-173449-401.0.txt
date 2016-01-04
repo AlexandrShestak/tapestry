@@ -10,7 +10,7 @@ EXCEPTION STACK:
     Message: Input string '"efe' is not valid; the character '"' at position 1 is not valid.
       trace: Handling page render request for page Adress
              Triggering event 'activate' on Adress
-             Restoring field com.shestakam.tapestry.helloApp.pages.Adress.name from query parameter 'name'
+             Restoring field com.shestakam.tapestry.helloApp.pages.Address.name from query parameter 'name'
 
   Exception: java.lang.IllegalArgumentException
     Message: Input string '"efe' is not valid; the character '"' at position 1 is not valid.
@@ -26,7 +26,7 @@ EXCEPTION STACK:
   - org.apache.tapestry5.ioc.internal.RegistryImpl.run(RegistryImpl.java:1254)
   - org.apache.tapestry5.internal.services.ComponentInstantiatorSourceImpl$EventMethodAdvice.advise(ComponentInstantiatorSourceImpl.java:470)
   - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
-  - com.shestakam.tapestry.helloApp.pages.Adress.dispatchComponentEvent(Adress.java)
+  - com.shestakam.tapestry.helloApp.pages.Address.dispatchComponentEvent(Adress.java)
   - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.dispatchEvent(ComponentPageElementImpl.java:917)
   - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.processEventTriggering(ComponentPageElementImpl.java:1102)
   - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.access$3100(ComponentPageElementImpl.java:57)

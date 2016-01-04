@@ -1,27 +1,9 @@
 package com.shestakam.tapestry.helloApp.entities;
 
-/**
- * Created by alexandr on 12/30/15.
- */
-public class User {
+import com.shestakam.tapestry.helloApp.entities.auto._User;
 
-    private String name;
+public class User extends _User {
 
-    private String password;
+    private static final long serialVersionUID = 1L; 
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

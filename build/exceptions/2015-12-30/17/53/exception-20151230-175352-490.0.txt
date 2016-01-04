@@ -2,18 +2,18 @@ EXCEPTION STACK:
 
 
   Exception: org.apache.tapestry5.runtime.ComponentEventException
-    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
+    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AddressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
     context: <EventContext: retqe4>
   eventType: activate
 
   Exception: org.apache.tapestry5.ioc.internal.OperationException
-    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
+    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AddressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
       trace: Handling page render request for page AdressQuery
              Triggering event 'activate' on AdressQuery
-             Obtaining value for parameter #1 of com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String)
+             Obtaining value for parameter #1 of com.shestakam.tapestry.helloApp.pages.AddressQuery.onActivate(java.lang.String)
 
   Exception: java.lang.RuntimeException
-    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AdressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
+    Message: Unable process query parameter 'name' as parameter #1 of event handler method com.shestakam.tapestry.helloApp.pages.AddressQuery.onActivate(java.lang.String): The value for query parameter 'name' was blank, but a non-blank value is needed.
 
   Exception: java.lang.RuntimeException
     Message: The value for query parameter 'name' was blank, but a non-blank value is needed.
@@ -26,8 +26,8 @@ EXCEPTION STACK:
   - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
   - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
   - org.apache.tapestry5.internal.transform.EventHandlerMethodParameterSource.get(EventHandlerMethodParameterSource.java:66)
-  - com.shestakam.tapestry.helloApp.pages.AdressQuery.advised$dispatchComponentEvent_1a01f9ac339e(AdressQuery.java)
-  - com.shestakam.tapestry.helloApp.pages.AdressQuery$Invocation_dispatchComponentEvent_1a01f9ac339d.proceedToAdvisedMethod(Unknown Source)
+  - com.shestakam.tapestry.helloApp.pages.AddressQuery.advised$dispatchComponentEvent_1a01f9ac339e(AdressQuery.java)
+  - com.shestakam.tapestry.helloApp.pages.AddressQuery$Invocation_dispatchComponentEvent_1a01f9ac339d.proceedToAdvisedMethod(Unknown Source)
   - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:90)
   - org.apache.tapestry5.internal.services.ComponentInstantiatorSourceImpl$EventMethodAdvice.advise(ComponentInstantiatorSourceImpl.java:484)
   - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
@@ -37,7 +37,7 @@ EXCEPTION STACK:
   - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
   - org.apache.tapestry5.internal.services.ComponentInstantiatorSourceImpl$EventMethodAdvice.advise(ComponentInstantiatorSourceImpl.java:484)
   - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
-  - com.shestakam.tapestry.helloApp.pages.AdressQuery.dispatchComponentEvent(AdressQuery.java)
+  - com.shestakam.tapestry.helloApp.pages.AddressQuery.dispatchComponentEvent(AdressQuery.java)
   - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.dispatchEvent(ComponentPageElementImpl.java:917)
   - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.processEventTriggering(ComponentPageElementImpl.java:1102)
   - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.access$3100(ComponentPageElementImpl.java:57)

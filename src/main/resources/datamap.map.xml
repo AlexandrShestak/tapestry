@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-map xmlns="http://cayenne.apache.org/schema/7/modelMap"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://cayenne.apache.org/schema/7/modelMap http://cayenne.apache.org/schema/7/modelMap.xsd"
+	 project-version="7">
+	<property name="defaultPackage" value="com.shestakam.tapestry.helloApp.entities"/>
+	<property name="defaultSchema" value="jdbc:mysql://localhost:3306/tapestryHello"/>
+	<db-entity name="address">
+		<db-attribute name="id" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" length="50"/>
+		<db-attribute name="user_id" type="INTEGER"/>
+	</db-entity>
+	<db-entity name="user">
+		<db-attribute name="id" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" length="30"/>
+		<db-attribute name="password" type="VARCHAR" length="30"/>
+	</db-entity>
+	<obj-entity name="Address" className="com.shestakam.tapestry.helloApp.entities.Address" dbEntityName="address">
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+	</obj-entity>
+	<obj-entity name="User" className="com.shestakam.tapestry.helloApp.entities.User" dbEntityName="user">
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+		<obj-attribute name="password" type="java.lang.String" db-attribute-path="password"/>
+	</obj-entity>
+	<db-relationship name="user" source="address" target="user" toMany="false">
+		<db-attribute-pair source="user_id" target="id"/>
+	</db-relationship>
+	<db-relationship name="address" source="user" target="address" toMany="true">
+		<db-attribute-pair source="id" target="user_id"/>
+	</db-relationship>
+	<obj-relationship name="user" source="Address" target="User" deleteRule="Nullify" db-relationship-path="user"/>
+	<obj-relationship name="address" source="User" target="Address" deleteRule="Deny" db-relationship-path="address"/>
+</data-map>

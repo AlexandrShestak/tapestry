@@ -4,9 +4,9 @@
         <h1>Username :  ${user.name} </h1>
         <h1>Password :  ${user.password} </h1>
 
-        <a t:type="pagelink" page="adress" context="user.name">Get adress</a>
+        <a t:type="pagelink" page="address" context="user.name">Get adress</a>
         <br/>
-        <a t:type="pagelink" page="adressQuery" context="user.name">Get adress</a>
+        <a t:type="pagelink" page="addressQuery" context="user.name">Get adress</a>
 
 
 <!--
