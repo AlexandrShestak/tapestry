@@ -2,11 +2,12 @@ package com.shestakam.tapestry.helloApp.pages;
 
 import com.shestakam.tapestry.helloApp.entities.User;
 import com.shestakam.tapestry.helloApp.services.user.IUserService;
-import org.apache.cayenne.di.Inject;
+
 import org.apache.tapestry5.annotations.InjectPage;
 import org.apache.tapestry5.annotations.Log;
 import org.apache.tapestry5.annotations.PageLoaded;
 import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.ioc.annotations.InjectService;
 
 
@@ -21,7 +22,7 @@ public class Index {
     @Property
     private User user;
 
-    @InjectService(value = "IUserService")
+    @Inject
     private IUserService userService;
 
     @PageLoaded

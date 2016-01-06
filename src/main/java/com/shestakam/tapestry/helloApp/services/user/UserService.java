@@ -8,8 +8,9 @@ import org.apache.cayenne.ObjectContext;
 import org.apache.cayenne.exp.Expression;
 import org.apache.cayenne.exp.ExpressionFactory;
 import org.apache.cayenne.query.SelectQuery;
+import org.apache.tapestry5.ioc.annotations.Inject;
 
-import javax.inject.Inject;
+
 import java.util.List;
 
 /**

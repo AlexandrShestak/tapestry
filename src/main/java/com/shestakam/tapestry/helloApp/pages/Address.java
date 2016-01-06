@@ -5,6 +5,7 @@ import com.shestakam.tapestry.helloApp.services.user.IUserService;
 
 import org.apache.tapestry5.annotations.InjectPage;
 import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.ioc.annotations.InjectService;
 
 import java.math.BigInteger;
@@ -25,7 +26,7 @@ public class Address {
     private Error error;
 
 
-    @InjectService(value = "IUserService")
+    @Inject
     private IUserService userService;
 
 
